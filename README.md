@@ -68,3 +68,26 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### comment as to what i am to do
+
+Create a form (with proper HTML semantics) that includes the following:
+-A fieldset to hold your todo items - Todo Form
+-Text input to add a new item
+-Button to add new item
+When a new item is added, the following should happen:
+-Add an item to the fieldset with the following:
+—Name of the item
+—Checkbox to mark as done
+-Save item to localstorage
+-Input field cleared
+-Focus set to the input field
+When an item's checkbox is checked:
+-Remove the item from the document
+-Remove the item if it's saved locally
+-Reset the keyboard focus
+—If it's the last item, set keyboard focus to the input box
+—If there is an item after the removed item, set keyboard focus to that item's checkbox
+—If there is no item after the removed item, set the keyboard focus to the previous item's checkbox
+When the page is loaded:
+-Populate list of items from those saved locally

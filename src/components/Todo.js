@@ -12,7 +12,7 @@ export default function Todo({ todo, removeTodo, toggleComplete }) {
     }
 
     return (
-        <ListItem style={{ display: 'flex' }}>
+        <ListItem style={{ display: "flex" }}>
             <Checkbox checked={todo.completed} onClick={handleCheckboxClick} />
             <Typography
                 variant="body1"
@@ -22,7 +22,7 @@ export default function Todo({ todo, removeTodo, toggleComplete }) {
             >
                 {todo.task}
             </Typography>
-            <IconButton>
+            <IconButton onClick={handleRemoveClick}>
                 <CloseIcon />
             </IconButton>
         </ListItem>
